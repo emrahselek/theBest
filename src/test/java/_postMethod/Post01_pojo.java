@@ -1,8 +1,7 @@
-package post;
+package _postMethod;
 
 import baseurl.BaseUrl_HerOkuApp;
 import io.restassured.http.ContentType;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.Test;
 import pojo_pojo.DagittinBiziPojo;

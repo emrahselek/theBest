@@ -1,4 +1,4 @@
-package get_method;
+package _get_method;
 
 import baseurl.BaseUrl_HerOkuApp;
 import io.restassured.response.Response;
