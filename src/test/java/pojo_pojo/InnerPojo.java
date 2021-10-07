@@ -4,17 +4,17 @@ package pojo_pojo;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class BookingDatesPojo {
+public class InnerPojo {
 
     private String checkin;
     private String checkout;
 
-    public BookingDatesPojo(String checkin, String checkout) {
+    public InnerPojo(String checkin, String checkout) {
         this.checkin = checkin;
         this.checkout = checkout;
     }
 
-    public BookingDatesPojo() {
+    public InnerPojo() {
     }
 
     public String getCheckin() {

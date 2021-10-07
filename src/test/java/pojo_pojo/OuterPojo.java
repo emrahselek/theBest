@@ -4,16 +4,16 @@ import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class InfoPojo {
+public class OuterPojo {
 
     private String firstname;
     private String lastname;
     private Integer totalprice;
     private Boolean depositpaid;
-    private BookingDatesPojo bookingdates;
+    private InnerPojo bookingdates;
     private String additionalneeds;
 
-    public InfoPojo(String firstname, String lastname, Integer totalprice, Boolean depositpaid, BookingDatesPojo bookingdates, String additionalneeds) {
+    public OuterPojo(String firstname, String lastname, Integer totalprice, Boolean depositpaid, InnerPojo bookingdates, String additionalneeds) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.totalprice = totalprice;
@@ -22,7 +22,7 @@ public class InfoPojo {
         this.additionalneeds = additionalneeds;
     }
 
-    public InfoPojo() {
+    public OuterPojo() {
     }
 
     public String getFirstname() {
@@ -57,11 +57,11 @@ public class InfoPojo {
         this.depositpaid = depositpaid;
     }
 
-    public BookingDatesPojo getBookingdates() {
+    public InnerPojo getBookingdates() {
         return bookingdates;
     }
 
-    public void setBookingdates(BookingDatesPojo bookingdates) {
+    public void setBookingdates(InnerPojo bookingdates) {
         this.bookingdates = bookingdates;
     }
 
